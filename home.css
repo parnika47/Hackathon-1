@@ -1,0 +1,183 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f7ff;
+  color: #183153;
+}
+
+header {
+  background: linear-gradient(135deg, #1264cb, #48a1f5);
+  color: white;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 25px rgba(18, 100, 203, 0.1);
+}
+
+h2, h3 {
+  color: #1264cb;
+}
+
+input[type="url"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #c6d8ef;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 12px 0 22px;
+}
+
+.category {
+  border: 1px solid #dce8f8;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.category summary {
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  background: #f2f8ff;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+
+.options label {
+  cursor: pointer;
+}
+
+.options input {
+  accent-color: #1264cb;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background: #1264cb;
+  color: white;
+  padding: 15px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b4eaa;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+button.secondary {
+  background: #e4eefb;
+  color: #1264cb;
+}
+
+#error {
+  color: #c62828;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.score-card {
+  background: #eaf4ff;
+  border-radius: 14px;
+  text-align: center;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+#score {
+  font-size: 55px;
+  font-weight: bold;
+  color: #1264cb;
+}
+
+.result-item {
+  border: 1px solid #e0eaf6;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+.result-item p {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.result-item a {
+  color: #1264cb;
+  font-weight: bold;
+}
+
+#summary {
+  background: #f2f8ff;
+  padding: 18px;
+  border-radius: 10px;
+  line-height: 1.7;
+}
+
+#dataStatus {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 22px;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 18px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

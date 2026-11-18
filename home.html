@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiverFriendly AI</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+    <h1>⌂ LiverFriendly AI</h1>
+    <p>Find a home that matches your lifestyle.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Find Your Perfect Home</h2>
+      <p>Paste a property listing URL to analyze its surroundings.</p>
+
+      <input
+        id="url"
+        type="url"
+        placeholder="Paste Bayut, dubizzle or Property Finder URL"
+      >
+
+      <h3>Choose Your Lifestyle Preferences</h3>
+      <p id="selectedCount">0 features selected</p>
+
+      <div id="features"></div>
+
+      <div class="actions">
+        <button id="clear" class="secondary">Clear</button>
+        <button id="analyze">✨ Analyze My Property</button>
+      </div>
+
+      <p id="error"></p>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2 id="propertyName"></h2>
+      <p id="propertyLocation"></p>
+
+      <div class="score-card">
+        <h3>Lifestyle Match Score</h3>
+        <div id="score">0/0</div>
+        <p id="scoreDetail"></p>
+        <p id="scoreNote"></p>
+      </div>
+
+      <h3>Feature Breakdown</h3>
+      <div id="breakdown"></div>
+
+      <h3>✨ AI Lifestyle Summary</h3>
+      <p id="summary"></p>
+
+      <p id="dataStatus"></p>
+    </section>
+  </main>
+
+  <footer>LiverFriendly AI • Dubai Real Estate Hackathon</footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
